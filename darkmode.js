@@ -7,7 +7,7 @@ darkmodeButton.innerText = "Switch Theme"
 document.body.appendChild(darkmodeButton)
 
 darkmodeCss.rel = "stylesheet"
-darkmodeCss.href = "https://github.com/ariyoaresa/darkmodejs/blob/main/darkmode.css"
+darkmodeCss.href = "https://ariyoaresa.me/darkmodejs/darkmode.css"
 document.documentElement.appendChild(darkmodeCss)
 
 // Ad a transition ttto the html to make it smoother
