@@ -8,4 +8,8 @@ You can send an Email to Ariyo Aresa <a href="mailto:ariyoaresa89@gmail.com">her
 # How to Use
 Copy the line of code below, and add it to your code and you'll easily be able to switch from light mode to darkmode on your website
 
+
+   ```bash
  <script src="https://ariyoaresa.me/darkmodejs/darkmode.js"></script>
+   ```
+
