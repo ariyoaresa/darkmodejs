@@ -1,0 +1,17 @@
+.dark{
+    filter: invert(95%);
+    filter: hue-rotate(100%);
+}
+.dark img, .dark video{
+    filter: invert(95%);
+    filter: hue-rotate(100%);
+}
+.switcherjs{
+    background-color: white;
+    color: black;
+    outline: none;
+    border: .5px solid black;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
