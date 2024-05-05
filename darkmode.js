@@ -1,9 +1,14 @@
 const darkmodeButton = document.createElement("button")
+const darkmodeCss = document.createElement("link")
 
 darkmodeButton.className = "switcherjs"
 darkmodeButton.style.padding = "3px"
 darkmodeButton.innerText = "Switch Theme"
 document.body.appendChild(darkmodeButton)
+
+darkmodeCss.rel = "stylesheet"
+darkmodeCss.href = "https://github.com/ariyoaresa/darkmodejs/blob/main/darkmode.css"
+document.documentElement.appendChild(darkmodeCss)
 
 // Ad a transition ttto the html to make it smoother
 document.addEventListener("DOMContentLoaded", function(){
