@@ -10,6 +10,6 @@ Copy the line of code below, and add it to your code and you'll easily be able t
 
 
    ```bash
- <script src="https://ariyoaresa.me/darkmodejs/darkmode.js"></script>
+ <script src="https://ariyoaresa.github.io/darkmodejs/darkmode.js"></script>
    ```
 
