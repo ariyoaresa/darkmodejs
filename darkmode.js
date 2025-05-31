@@ -1,38 +1,22 @@
+const darkmodeButton = document.createElement("button")
+const darkmodeCss = document.createElement("link")
 
-const darkmodeButton = document.createElement("button");
-const darkmodeCss = document.createElement("link");
+darkmodeButton.className = "switcherjs"
+darkmodeButton.style.padding = "3px"
+darkmodeButton.innerText = "Switch Theme"
+document.body.appendChild(darkmodeButton)
 
-darkmodeButton.className = "switcherjs";
-darkmodeButton.style.padding = "6px 10px";
-darkmodeButton.innerText = "Switch Theme";
-darkmodeButton.title = "Toggle between dark and light mode";
+darkmodeCss.rel = "stylesheet"
+darkmodeCss.href = "https://ariyoaresa.github.io/darkmodejs/darkmode.css"
+document.documentElement.appendChild(darkmodeCss)
 
-// Append the button to the body
-document.body.appendChild(darkmodeButton);
-
-// Load external dark mode CSS
-darkmodeCss.rel = "stylesheet";
-darkmodeCss.href = "https://ariyoaresa.github.io/darkmodejs/darkmode.css";
-document.head.appendChild(darkmodeCss);
-
-// Apply saved theme from localStorage on page load
-document.addEventListener("DOMContentLoaded", function () {
+// Ad a transition ttto the html to make it smoother
+document.addEventListener("DOMContentLoaded", function(){
     document.documentElement.style.transition = "0.3s ease-in-out";
+})
 
-    const savedTheme = localStorage.getItem("switchertheme");
-    if (savedTheme === "dark") {
-        document.documentElement.classList.add("dark");
-    } else {
-        document.documentElement.classList.remove("dark");
-    }
-});
+// button functionalities
 
-darkmodeButton.addEventListener("click", function () {
-    const html = document.documentElement;
-    html.classList.toggle("dark");
-
-    // Save the new theme
-    const newTheme = html.classList.contains("dark") ? "dark" : "light";
-    localStorage.setItem("switchertheme", newTheme);
-});
-        
+darkmodeButton.addEventListener("click", function(){
+    document.documentElement.classList.toggle("dark");
+})
